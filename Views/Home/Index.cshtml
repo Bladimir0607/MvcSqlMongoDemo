@@ -1,0 +1,35 @@
+﻿@model MvcSqlMongoDemo.Models.UsuarioAccesoViewModel
+
+<h2>Usuarios (SQL Server)</h2>
+
+@if (Model.Usuarios.Any())
+{
+    <ul>
+        @foreach (var usuario in Model.Usuarios)
+        {
+            <li>@usuario.Nombre - @usuario.Email</li>
+        }
+    </ul>
+}
+else
+{
+    <p>No hay usuarios en SQL Server.</p>
+}
+
+<hr />
+
+<h2>Registros de Acceso (MongoDB)</h2>
+
+@if (Model.Registros.Any())
+{
+    <ul>
+        @foreach (var registro in Model.Registros)
+        {
+            <li>@registro.UsuarioEmail - @registro.FechaAcceso</li>
+        }
+    </ul>
+}
+else
+{
+    <p>No hay registros en MongoDB.</p>
+}
