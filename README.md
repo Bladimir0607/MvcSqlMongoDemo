@@ -102,5 +102,3 @@ Bladimir Ventura - A00115757
 Miguel José Saint Hilaire Peña - A00116662
 
 Sean Alcántara Carrera - A00115911 
-
-Bladimir Ventura - A00115757
